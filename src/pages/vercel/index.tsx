@@ -1,5 +1,7 @@
 import styles from '@/pages/vercel/Vercel.module.scss'
 import VercelLogo from "@/components/image/VercelLogo";
+import {FiChevronDown} from 'react-icons/fi'
+import FeatureItem from "@/components/vercel/FeatureItem";
 
 export default function Vercel() {
   return (
@@ -17,25 +19,40 @@ export default function Vercel() {
             <div className={styles['navbar-main']}>
               <ul>
                 <li>
-                  <a href='#'>Features</a>
+                  <div>
+                    <button className={`${styles['navbar-main-features']} ${styles['navbar-item']}`}>
+                      <span>Features</span>
+                      <span><FiChevronDown/></span>
+                    </button>
+                  </div>
+                  <div className={styles['navbar-main-features-popup']}>
+                    <div className={styles['navbar-main-features-grid']}>
+                      <FeatureItem icon={FiChevronDown} />
+                      <FeatureItem icon={FiChevronDown} />
+                      <FeatureItem icon={FiChevronDown} />
+                      <FeatureItem icon={FiChevronDown} />
+                      <FeatureItem icon={FiChevronDown} />
+                      <FeatureItem icon={FiChevronDown} />
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <a href='#'>Docs</a>
+                  <a className={styles['navbar-item']} href='#'>Docs</a>
                 </li>
                 <li>
-                  <a href='#'>Templates</a>
+                  <a className={styles['navbar-item']} href='#'>Templates</a>
                 </li>
                 <li>
-                  <a href='#'>Integrations</a>
+                  <a className={styles['navbar-item']} href='#'>Integrations</a>
                 </li>
                 <li>
-                  <a href='#'>Customers</a>
+                  <a className={styles['navbar-item']} href='#'>Customers</a>
                 </li>
                 <li>
-                  <a href='#'>Enterprise</a>
+                  <a className={styles['navbar-item']} href='#'>Enterprise</a>
                 </li>
                 <li>
-                  <a href='#'>Pricing</a>
+                  <a className={styles['navbar-item']} href='#'>Pricing</a>
                 </li>
               </ul>
             </div>
@@ -43,10 +60,10 @@ export default function Vercel() {
             <div className={styles['navbar-right']}>
               <ul>
                 <li>
-                  <a href='#'>Contact</a>
+                  <a className={styles['navbar-item']} href='#'>Contact</a>
                 </li>
                 <li>
-                  <a href='#'>Login</a>
+                  <a className={styles['navbar-item']} href='#'>Login</a>
                 </li>
                 <li>
                   <a className={styles['sign-up']} href='#'>Sign Up</a>

@@ -1,0 +1,33 @@
+.feature-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 16px;
+  column-gap: 16px;
+  height: 90px;
+  border: 1px solid transparent;
+}
+
+.icon-wrapping-circle {
+  border-radius: 100%;
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+}
+
+.feature-item-main {
+
+}
+
+.feature-item-title {
+
+}
+
+.feature-item-desc {
+
+}
