@@ -1,3 +1,140 @@
-.text {
-  color: blue;
+.vercel-main {
+
+}
+
+.navbar-wrapper {
+  background-color: black;
+}
+
+.navbar {
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1248px;
+  padding: 0 24px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .navbar-item {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.navbar-logo {
+
+}
+
+.navbar-main {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    padding: 0 8px;
+  }
+
+  .navbar-main-features {
+    border: none;
+    background-color: inherit;
+    font: inherit;
+    cursor: pointer;
+    color: inherit;
+
+    &:hover {
+      color: white;
+    }
+
+    svg {
+      vertical-align: middle;
+      &.active {
+        transform: rotate(180deg);
+        transition: all 0.2s;
+      }
+
+      &.inactive {
+        transition: all 0.2s;
+      }
+    }
+
+    &.active {
+      color: white;
+      cursor: default;
+    }
+
+    &.inactive {
+    }
+  }
+
+  .navbar-main-features-popup {
+    position: absolute;
+    left: 0;
+    top: 66px;
+    width: 100%;
+    border-top-color: rgb(51, 51, 51);
+    border-top-style: solid;
+    border-top-width: 1px;
+    background-color: black;
+  }
+}
+
+.navbar-right {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      &:nth-child(n+2) {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .sign-up {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 0 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 32px;
+    width: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}
+
+.navbar-main-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
+  max-width: 1248px;
+  width: 100%;
+  margin: auto;
+  padding: 24px 24px 0 24px;
+}
+
+.navbar-main-features-tail {
+  display: block;
+  height: 32px;
+  border-bottom: 1px solid rgb(51, 51, 51);
 }
