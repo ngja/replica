@@ -3,7 +3,9 @@ import {IconType} from "react-icons";
 import React from "react";
 
 type FeatureItemProps = {
-  icon: IconType
+  icon: IconType,
+  title: String,
+  description: String,
 }
 
 export default function FeatureItem(props: FeatureItemProps) {
@@ -17,10 +19,10 @@ export default function FeatureItem(props: FeatureItemProps) {
         </div>
         <div className={styles['feature-item-main']}>
           <div className={styles['feature-item-title']}>
-            title
+            {props.title}
           </div>
           <div className={styles['feature-item-desc']}>
-            desc
+            {props.description}
           </div>
         </div>
       </div>
